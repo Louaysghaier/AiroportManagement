@@ -37,6 +37,9 @@ Initial Catalog=AirportManagement4SE2;Integrated Security=true");
             //Lines 37 and 38 are used to apply the configuration of the classes PlaneConfiguration and FlightConfiguration
             modelBuilder.ApplyConfiguration(new FlightConfiguration());
             modelBuilder.ApplyConfiguration(new PlaneConfiguration());
+
+           // modelBuilder.ApplyConfiguration(new ReservationTicket());
+
             // configuration du type complexe( ou detenu ) FullName 
             //La propriété FirstName a une longueur maximale de 30 et le nom de la colonne 
             //correspondante à cette propriété dans la base de données doit être PassFirstName
@@ -60,7 +63,6 @@ Initial Catalog=AirportManagement4SE2;Integrated Security=true");
             //TP5Q2
             modelBuilder.Entity<Staff>().ToTable("Staffs");
             modelBuilder.Entity<Traveller>().ToTable("Travellers");
-            modelBuilder.
             base.OnModelCreating(modelBuilder);
         }
         //override configure + enter

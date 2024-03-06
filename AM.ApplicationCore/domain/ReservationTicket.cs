@@ -8,6 +8,7 @@ namespace AM.ApplicationCore.domain
 {
     public class ReservationTicket
     {
+        public int Id { get; set; }
         public DateTime DateReservation{ get; set; }
         public float prix { get; set;}
         public Passenger Passenger { get; set; }
